@@ -1,0 +1,107 @@
+/*  
+Theme Name: org.whatwg.awesome
+Theme URI: http://www.whatwg.org/
+Description: Super awesome WHATWG blog theme.
+Version: 5.0
+Author: Ben (with modifications by Anne, Divya) 
+Author URI: http://projectcerbera.com/
+*/
+
+/*
+ Text: #000 #3c790a orangered (#ff4500)
+ Backgrounds: #fff #efe #9f9 orange (#ffa500)
+*/
+
+/* Base */
+html, input, pre, textarea { font-family:Verdana, sans-serif }
+html { color:#000; line-height:1.8; background:#fff; overflow-y:scroll }
+body { margin:0 auto; width:80% }
+abbr, span[title] { cursor:help }
+code, code a, #styling, #stylingr { color:#ff4500; font-family:Consolas, monospace }
+blockquote, dl, ol, ul, p, pre, .navigation { margin:0 0 1em }
+blockquote { padding: 0 0.5em; background: #efe; border-left: 3px solid #9f9; }
+sup { vertical-align: top; }
+
+/* - Headings */
+h1, h2, h3, caption, legend, th { margin: 0; color: #3c790a; font-weight: normal; font-family: Rockwell, Georgia, serif; }
+h1 { font-size: 1.5em }
+h2 { margin-top:.5em; padding-top:1.5em; border-top:3px solid #9f9; font-size:1.333em }
+h2:first-of-type { padding-top:.5em; border-top:none }
+h3 { font-size: 1.167em; }
+h4 { font-size: 1.083em; }
+
+/* - Lists */
+ul, ol { padding: 0 0 0 2.5em; }
+li { margin: 0; padding: 0; }
+ul ul, ol ol, dl ul, dl ol { margin: 0; padding: 0 0 0 2em; }
+ol { padding: 0 0 0 2.5em; list-style: decimal; }
+ol ol { list-style: lower-alpha; }
+ol ol ol { list-style: lower-latin; }
+ol ol ol ol { list-style: upper-latin; }
+dl, dt, dd { margin: 0; padding: 0; }
+dt { font-weight: bold; }
+dt:first-child { margin: 0; } /* Keep with heading */
+dd { padding: 0; }
+
+/* Links */
+a { color: #006ff7; text-decoration: none; border-bottom: 1px dotted #ccc; }
+a:visited { color: #800080; }
+a:hover, a:focus, a:active { color: #ff4500; }
+
+/* Page Areas */
+/*#header { margin:3em 0 3em 0; width: 100%; text-align: center; padding-bottom:0.25em; }
+#header img { height:.8em }
+#header a { border-bottom:none; color:#3c790a }*/
+#content { float:left; width:71%; }
+#content .post { margin-bottom: 3em; }
+/*#sidebar { margin: 0.667em 0 0 72%; padding: 0.667em 0 0 2em; }*/
+/*#footer { clear: left; padding: 0.675em 0 0 0; margin: 1.25em 0; font-size: 0.8em; }*/
+
+/* - Content */
+h2 > a { display: block; border: 0; }
+/*p.meta { margin-bottom:1.25em; font-size:.8em }*/
+.navigation { display: block; overflow:hidden }
+.navigation .alignleft { float: left; }
+.navigation .alignright { float: right; }
+
+/* -- Comments */
+#commentform { margin: 0; padding: 0; }
+#commentform p { margin: 0 0 0.5em 0; }
+#commentform textarea { width: 100%; -moz-box-sizing: border-box; box-sizing: border-box; }
+.commentlist { list-style: none; margin: 0; padding: 0; }
+.commentlist .comment { padding: 1.5em 0 0 0; border-bottom: 1px dotted #ccc; }
+
+/* - Sidebar */
+/*#sidebar li { padding-bottom: 0.6em; font-size: 0.9em; }
+#sidebar h2 { border: 0; }
+#sidebar ul { padding-left:0; list-style-type:none; }*/
+
+/* - Footer */
+/*#footer { text-align:center }*/
+
+
+
+
+
+/**********************************************************************************/
+/***** TEMP - NEW STUFF *****/
+header { margin:3em 0 3em 0; width: 100%; text-align: center; padding-bottom:0.25em; }
+header img { height:.8em }
+header a { border-bottom:none; color:#3c790a }
+.description:first-of-type { margin: 0; color: rgb(0,0,0); padding: 0; }
+
+/* Footer */
+footer { clear: left; padding: 0.675em 0 0 0; margin: 1.25em 0; font-size: 0.8em; }
+footer { text-align:center }
+
+/* Content */
+div.entry-meta { margin-bottom:1.25em; font-size:.8em }
+
+/* Sidebar */
+#sidebar { margin: 0.667em 0 0 72%; padding: 0.667em 0 0 2em; }
+#sidebar li { padding-bottom: 0.6em; font-size: 0.9em; }
+#sidebar h2 { border: 0; }
+#sidebar ul { padding-left:0; list-style-type:none; }
+
+
+iframe[seamless] { margin: 0; padding: 0; width: 100%; border: 0; overflow: visible; }
