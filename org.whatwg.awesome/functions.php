@@ -1,4 +1,7 @@
 <?php
+// Don't store the IP of comment authors.
+add_filter('pre_comment_user_ip', function() { return ''; });
+
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
