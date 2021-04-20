@@ -7,7 +7,7 @@
   <h2 class="entry-title"><?php the_title(); ?></h2>
   <p class="meta">
    <time timedate="<?php echo get_the_date(); ?>"><?php the_time('F jS, Y') ?></time> by
-   <?php if (get_the_author_url()) { ?><a href="<?php the_author_url(); ?>"><?php the_author(); ?></a><?php } else { the_author(); } ?>
+   <?php if (get_the_author_meta('url')) { ?><a href="<?php the_author_meta('url'); ?>"><?php the_author(); ?></a><?php } else { the_author(); } ?>
    in <?php the_category(', ') ?>
    <?php edit_post_link('(edit this post)','',''); ?>
 
