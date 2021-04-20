@@ -4,6 +4,7 @@ add_filter('pre_comment_user_ip', function() { return ''; });
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
+        'id' => 'sidebar-1',
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h2 class="widgettitle">',
@@ -99,8 +100,8 @@ function kubrick_add_theme_page() {
 						update_option('kubrick_header_color', $fontcolor);
 					}
 					if ( preg_match('/[0-9A-F]{6}|[0-9A-F]{3}/i', $_REQUEST['njuppercolor'], $uc) && preg_match('/[0-9A-F]{6}|[0-9A-F]{3}/i', $_REQUEST['njlowercolor'], $lc) ) {
-						$uc = ( strlen($uc[0]) == 3 ) ? $uc[0]{0}.$uc[0]{0}.$uc[0]{1}.$uc[0]{1}.$uc[0]{2}.$uc[0]{2} : $uc[0];
-						$lc = ( strlen($lc[0]) == 3 ) ? $lc[0]{0}.$lc[0]{0}.$lc[0]{1}.$lc[0]{1}.$lc[0]{2}.$lc[0]{2} : $lc[0];
+						$uc = ( strlen($uc[0]) == 3 ) ? $uc[0][0].$uc[0][0].$uc[0][1].$uc[0][1].$uc[0][2].$uc[0][2] : $uc[0];
+						$lc = ( strlen($lc[0]) == 3 ) ? $lc[0][0].$lc[0][0].$lc[0][1].$lc[0][1].$lc[0][2].$lc[0][2] : $lc[0];
 						update_option('kubrick_header_image', "header-img.php?upper=$uc&lower=$lc");
 					}
 
