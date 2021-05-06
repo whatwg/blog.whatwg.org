@@ -2,6 +2,12 @@
 // Don't store the IP of comment authors.
 add_filter('pre_comment_user_ip', function() { return ''; });
 
+// Disable \n → <br> and smart quotes on posts and excerpts (but leave it for comments).
+remove_filter('the_content', 'wpautop');
+remove_filter('the_content', 'wptexturize');
+remove_filter('the_excerpt', 'wpautop');
+remove_filter('the_excerpt', 'wptexturize');
+
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'id' => 'sidebar-1',
