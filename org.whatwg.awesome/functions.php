@@ -8,6 +8,12 @@ remove_filter('the_content', 'wptexturize');
 remove_filter('the_excerpt', 'wpautop');
 remove_filter('the_excerpt', 'wptexturize');
 
+add_action('send_headers', function() {
+  header('strict-transport-security', 'max-age=63072000; includeSubDomains; preload');
+  header('x-content-type-options', 'nosniff');
+  header('x-frame-options', 'sameorigin');
+});
+
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'id' => 'sidebar-1',
