@@ -11,9 +11,10 @@ remove_filter('the_excerpt', 'wptexturize');
 // Keep (mostly) in sync with https://github.com/whatwg/misc-server and
 // https://github.com/whatwg/participate.whatwg.org.
 add_action('send_headers', function() {
-  header('strict-transport-security', 'max-age=63072000; includeSubDomains; preload');
-  header('x-content-type-options', 'nosniff');
-  header('x-frame-options', 'sameorigin');
+  header('strict-transport-security: max-age=63072000; includeSubDomains; preload');
+  header('x-content-type-options: nosniff');
+  header('x-frame-options: sameorigin');
+  header_remove('x-powered-by');
 });
 
 if ( function_exists('register_sidebar') )
