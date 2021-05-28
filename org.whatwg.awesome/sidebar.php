@@ -5,6 +5,7 @@
   <li><a href="https://whatwg.org/faq">FAQ</a></li>
   <li><a href="https://whatwg.org/chat">Chat</a></li>
   <li><a href="https://whatwg.org/code-of-conduct">Code of Conduct</a></li>
+  <li><a href="https://whatwg.org/privacy-policy">Privacy Policy</a></li>
   <?php wp_list_pages('title_li='); ?>
  </ul>
 
