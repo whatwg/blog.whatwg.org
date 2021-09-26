@@ -7,3 +7,6 @@
 		<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
 	</p>
 </footer>
+
+<!-- closing HTML tag is necessary for wp-super-cache to work -->
+</html>
