@@ -90,7 +90,7 @@ h2 > a { display: block; border: 0; }
 header { margin:3em 0 3em 0; width: 100%; text-align: center; padding-bottom:0.25em; }
 header img { height:.8em }
 header a { border-bottom:none; color:#3c790a }
-.description:first-of-type { margin: 0; color: rgb(0,0,0); padding: 0; }
+.description:first-of-type { margin: 0; color: rgb(0,0,0); padding: 0; font-size: 1.333em; font-family: Rockwell, Georgia, serif; }
 
 /* Footer */
 footer { clear: left; padding: 0.675em 0 0 0; margin: 1.25em 0; font-size: 0.8em; }

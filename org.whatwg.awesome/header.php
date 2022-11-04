@@ -12,6 +12,6 @@
 <header>
 	<hgroup>
 		<h1><a href="/">The WHATWG Blog <img crossorigin src="https://resources.whatwg.org/logo.svg" alt=""></a></h1>
-		<h2 class="description"><?php bloginfo('description'); ?></h2>
+		<p class="description"><?php bloginfo('description'); ?></p>
 	</hgroup>
 </header>
