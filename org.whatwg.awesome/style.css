@@ -19,7 +19,7 @@ html, input, pre, textarea { font-family:Verdana, sans-serif }
 html { color:#000; line-height:1.8; background:#fff; overflow-y:scroll }
 body { margin:0 auto; width:80% }
 abbr, span[title] { cursor:help }
-code, code a, #styling, #stylingr { color:#ff4500; font-family:Consolas, monospace }
+pre.wp-block-code code, code, code a, #styling, #stylingr { color:#ff4500; font-family:Consolas, monospace }
 blockquote, dl, ol, ul, p, pre, .navigation { margin:0 0 1em }
 blockquote { padding: 0 0.5em; background: #efe; border-left: 3px solid #9f9; }
 sup { vertical-align: top; }
