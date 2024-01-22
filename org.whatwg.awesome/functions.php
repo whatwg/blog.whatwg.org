@@ -1,4 +1,6 @@
 <?php
+add_theme_support('html5');
+
 // Don't store the IP of comment authors.
 add_filter('pre_comment_user_ip', function() { return ''; });
 
