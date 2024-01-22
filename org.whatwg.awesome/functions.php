@@ -1,5 +1,5 @@
 <?php
-add_theme_support('html5');
+add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script'));
 
 // Don't store the IP of comment authors.
 add_filter('pre_comment_user_ip', function() { return ''; });
